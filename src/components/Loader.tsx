@@ -82,7 +82,7 @@ export function Loader({setLoading} : LoaderProps){
                         <Image fill={true} src="/pdx.svg" alt="CarboCat" />   
                         </motion.div> */}
                         <motion.div variants={imageScale} initial="hidden" animate="show" custom={0.8} className='flex items-center justify-center absolute origin-left z-30 bg-white w-full h-full'>
-                        <Image height={1000} width={1000} src="/DKC-logo.png" alt="CarboCat" />   
+                        <Image height={1000} width={1000} src="/DKC-Logo.png" alt="CarboCat" />   
                         </motion.div>
                         <motion.div layoutId="smooth" onAnimationComplete = {() => setLoading(false)} variants={imageScale} custom={1.0} initial="hidden" animate="show" className='absolute origin-left z-40 bg-primary h-full w-full' />                      
                     </div>
