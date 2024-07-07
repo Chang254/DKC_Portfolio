@@ -102,7 +102,7 @@ export function HeaderSection(){
   </p>
   </div>
 </div>
-<motion.span         initial={{
+{/* <motion.span         initial={{
 opacity: 1,
 y: -100,
 }}
@@ -112,7 +112,7 @@ opacity: scrollTextVisible ? 1 : 0,
 }}
 transition={{
 duration: 0.2,
-}} className = 'mb-16 text-2xl text-tiffany flex flex-col items-center w-screen'>Scroll Down<ArrowDown/></motion.span>
+}} className = 'mb-16 text-2xl text-tiffany flex flex-col items-center w-screen'>Scroll Down<ArrowDown/></motion.span> */}
 
 </AuroraBackground>
     )
