@@ -78,9 +78,6 @@ export function Loader({setLoading} : LoaderProps){
                         <motion.div variants={imageScale} initial="hidden" animate="show" custom={0.4} className='absolute origin-left z-10 bg-black w-full h-full'>
                         <Image fill={true} src="/carbocat.svg" alt="CarboCat" />          
                         </motion.div>
-                        {/* <motion.div variants={imageScale} initial="hidden" animate="show" custom={0.6} className='absolute origin-left z-20 w-full h-full'>
-                        <Image fill={true} src="/pdx.svg" alt="CarboCat" />   
-                        </motion.div> */}
                         <motion.div variants={imageScale} initial="hidden" animate="show" custom={0.8} className='flex items-center justify-center absolute origin-left z-30 bg-white w-full h-full'>
                         <Image height={1000} width={1000} src="/DKC-Logo.png" alt="CarboCat" />   
                         </motion.div>
