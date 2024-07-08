@@ -8,7 +8,7 @@ import { useScroll, useTransform, motion, MotionValue } from "framer-motion"
 const sliders = [
     {
         id: 'Languages',
-        text: 'TypeScript Python',
+        text: 'TypeScript Python TypeScript Python',
         src: '/Arctic.JPG',
         alt: 'Daniel at Arctic Station',
         left: '-55%',
@@ -16,18 +16,18 @@ const sliders = [
     },
     {
         id: 'Frontend',
-        text: 'Next.js React Redux',
+        text: 'Next.js React Redux Next.js React Redux',
         src: '/Luna.jpeg',
         alt: 'Luna the baby kitten!',
-        left: '-15%',
+        left: '-35%',
         direction: -1
     },
     {
         id: 'Backend',
-        text: 'Node.js SQL NoSQL',
+        text: 'Node.js SQL NoSQL Node.js SQL NoSQL Node.js SQL NoSQL',
         src: '/Nature.jpeg',
         alt: 'Daniel in Nature',
-        left: '-25%',
+        left: '-45%',
         direction: 1
     },
     {
@@ -35,7 +35,7 @@ const sliders = [
         text: 'tRPC Prisma',
         src: '/Uno.jpeg',
         alt: 'Uno the cat',
-        left: '-35%',
+        left: '-75%',
         direction: -1
     },
     {
@@ -43,7 +43,7 @@ const sliders = [
         text: 'AWS Electron',
         src: '/Work.jpeg',
         alt: 'Work setup',
-        left: '-10%',
+        left: '-55%',
         direction: 1
     },
 ]
@@ -118,7 +118,7 @@ interface PhraseProps {
 function Phrase({text, src}: PhraseProps){
     return(
         <div className={'flex px-5 gap-5 items-center'}>
-            <p className='text-[7.5vw]'>
+            <p className='text-[8vw]'>
                 {text}
             </p>
             <span className='relative h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden'>

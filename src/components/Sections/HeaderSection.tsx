@@ -94,7 +94,7 @@ export function HeaderSection(){
   </div>
   </div>
 </div>
-<div className='mb-12 mt-12'>
+<div className='mb-32 sm:mb-12 mt-12'>
   <div ref={slider} className = 'relative whitespace-nowrap flex'>
   <p ref={firstText} className='m-0 px-4 text-slate-200 text-[50px] md:text-[8vw] font-bold'>
   Fullstack Software Engineer -
