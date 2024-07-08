@@ -36,7 +36,7 @@ export default function AboutSection(){
   
 
     return(
-        <section className='h-full flex flex-col py-[200px] bg-primary text-slate-200 ' ref={aboutContainer}>
+        <section className='h-full flex flex-col py-[50px] sm:py-[200px] bg-primary text-slate-200 ' ref={aboutContainer}>
         <div className='flex flex-col sm:flex-row w-full h-fit'>
         <p className='w-full sm:w-[50%] text-lg sm:text-2xl flex items-center px-12 flex-wrap gap-x-2'>
          {
