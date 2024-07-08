@@ -8,7 +8,7 @@ import { useScroll, useTransform, motion, MotionValue } from "framer-motion"
 const sliders = [
     {
         id: 'Languages',
-        text: 'TypeScript Python TypeScript Python',
+        text: 'TypeScript Python',
         src: '/Arctic.JPG',
         alt: 'Daniel at Arctic Station',
         left: '-55%',
@@ -16,7 +16,7 @@ const sliders = [
     },
     {
         id: 'Frontend',
-        text: 'Next.js React Redux Next.js React Redux',
+        text: 'Next.js React Redux',
         src: '/Luna.jpeg',
         alt: 'Luna the baby kitten!',
         left: '-35%',
@@ -24,7 +24,7 @@ const sliders = [
     },
     {
         id: 'Backend',
-        text: 'Node.js SQL NoSQL Node.js SQL NoSQL Node.js SQL NoSQL',
+        text: 'Node.js SQL NoSQL',
         src: '/Nature.jpeg',
         alt: 'Daniel in Nature',
         left: '-45%',
@@ -67,8 +67,8 @@ export default function SkillSection(){
     })
 
     return(
-        <section className='overflow-hidden h-full py-12 w-[100vw] bg-slate-200 text-slate-950'>
-            <div ref={skillContainer}>
+        <section className='overflow-hidden h-full py-12 w-[100vw] bg-primary text-slate-950'>
+            <div ref={skillContainer} className='flex flex-col gap-y-12'>
                 {
                     sliders.map((slider) => (
                         <Slider
@@ -99,11 +99,9 @@ function Slider({left, text, src, progress, direction}: SliderProps){
     const x = useTransform(progress, [0 , 1], [-250 * direction, 250 * direction])
 
     return (
-        <motion.div className = 'relative flex whitespace-nowrap'
+        <motion.div className = 'relative flex whitespace-nowrap bg-slate-200'
             style = {{left, x}}
         >
-            <Phrase text={text} src={src} />
-            <Phrase text={text} src={src} />
             <Phrase text={text} src={src} />
         </motion.div>
     )
@@ -117,13 +115,17 @@ interface PhraseProps {
 
 function Phrase({text, src}: PhraseProps){
     return(
-        <div className={'flex px-5 gap-5 items-center'}>
-            <p className='text-[8vw]'>
-                {text}
-            </p>
-            <span className='relative h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden'>
-                <Image style={{objectFit: "cover"}} src={src} fill={true} alt='Daniel' />
-            </span>
+        <div className={'flex items-center bg-slate-200'}>
+        {[...Array(3)].map(i => (
+        <div key={i} className={'flex px-5 gap-5 items-center bg-slate-200'}>
+        <p className='text-[15vw] sm:text-[7.5vw]'>
+            {text}
+        </p>
+        <span className='relative h-[15vw] sm:h-[7.5vw] aspect-[4/2] rounded-full overflow-hidden'>
+            <Image style={{objectFit: "cover"}} src={src} fill={true} alt='Daniel' />
+        </span>
+        </div>
+        ))}
         </div>
     )
 }

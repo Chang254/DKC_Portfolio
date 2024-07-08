@@ -19,8 +19,6 @@ export default function Model(){
 
     }
 
-    console.log(materialProps)
-
     useFrame(() => {
         if (mesh.current){
             mesh.current.rotation.x += 0.01
