@@ -1,5 +1,6 @@
 'use client'
 import { motion, useInView } from 'framer-motion'
+import Link from 'next/link'
 import { useRef } from 'react'
 
 const summaryOpacity = {
@@ -37,8 +38,8 @@ export default function AboutSection(){
 
     return(
         <section className='h-full flex flex-col py-[50px] sm:py-[100px] bg-primary text-slate-200 ' ref={aboutContainer}>
-        <div className='flex flex-col sm:flex-row w-full h-fit'>
-        <p className='w-full sm:w-[50%] text-lg sm:text-2xl flex items-center px-12 flex-wrap gap-x-2'>
+        <div className='flex flex-col items-center justify-center sm:flex-row w-full h-fit'>
+        <p className='w-full h-fit sm:w-[50%] text-lg sm:text-2xl flex items-center px-12 flex-wrap gap-x-2'>
          {
           paragraph.split(" ").map( (word, index) => {
             return <span key={index} className="overflow-hidden inline-flex overflow-hidden">
@@ -53,6 +54,14 @@ export default function AboutSection(){
             </span>
           })
          }
+         <motion.span
+              variants = {slideUp}
+                initial="initial"
+                animate = {isInView ? "open" : "closed"}
+                custom={21}
+              >
+         <Link href="https://www.carbocat.io" target="_blank" className="hover:underline underline-offset-3 decoration-cyan-500 font-semibold">Check out Carbocat.io here!</Link>
+         </motion.span>
         </p>
         <motion.div variants={summaryOpacity} initial = "initial" animate = { isInView ? "open" : "closed"} className='w-full mt-8 sm:mt-0 sm:w-[50%] flex flex-1 items-center flex-col'>
         <h3 className='w-[300px] py-2 text-5xl font-bold bg-gradient-to-r from-cyan-500 to-tiffany text-transparent bg-clip-text'>Summary</h3>
