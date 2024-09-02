@@ -32,11 +32,11 @@ export default function AboutSection(){
 
   const aboutContainer = useRef(null)
   const isInView = useInView(aboutContainer)
-  const paragraph = "I'm currently building Carbo Cat, an online learning platform for organic chemistry and working as a Fullstack Software Engineer @ Extensis.  If you are interested in working with me, please don't hesitate to reach out! My time is limited at the moment, but I'm always excited to turn your ideas into reality!"
+  const paragraph = "I'm currently building Carbo Cat, an online learning platform for organic chemistry and working as a Fullstack Software Engineer @ Extensis."
   
 
     return(
-        <section className='h-full flex flex-col py-[50px] sm:py-[200px] bg-primary text-slate-200 ' ref={aboutContainer}>
+        <section className='h-full flex flex-col py-[50px] sm:py-[100px] bg-primary text-slate-200 ' ref={aboutContainer}>
         <div className='flex flex-col sm:flex-row w-full h-fit'>
         <p className='w-full sm:w-[50%] text-lg sm:text-2xl flex items-center px-12 flex-wrap gap-x-2'>
          {
