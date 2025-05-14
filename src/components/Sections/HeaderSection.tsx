@@ -8,6 +8,7 @@ import { FlipLink } from "../FlipLink"
 import { useRef, useState, useEffect } from "react"
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { TextHoverEffect } from "../TextHighlight"
 
 export function HeaderSection(){
     const firstText = useRef(null)
@@ -59,8 +60,8 @@ export function HeaderSection(){
 <AuroraBackground className='min-h-[500px]' showRadialGradient>
 <div className='h-full w-full relative flex flex-col items-center mt-32 z-50 mb-12'>
   <div className='flex flex-col'>
-    <div className='mt-16 sm:mt-0 h-[400px] flex w-full'>
-      <Scene />
+        <div className="h-[30rem] flex items-center justify-center">
+      <TextHoverEffect text="DKC" />
     </div>
   <motion.h1 
   initial={{ opacity: 0, y: 100 }}

@@ -33,7 +33,7 @@ export default function AboutSection(){
 
   const aboutContainer = useRef(null)
   const isInView = useInView(aboutContainer)
-  const paragraph = "I'm currently building Carbo Cat, an online learning platform for organic chemistry and working as a Fullstack Software Engineer @ Extensis."
+  const paragraph = "I'm currently working as a Fullstack Software Engineer @ Extensis (Monotype) with a focus on the Frontend. I'm also building free tools for students like Carbo Cat!"
   
 
     return(
