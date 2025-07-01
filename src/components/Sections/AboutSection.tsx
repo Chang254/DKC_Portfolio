@@ -68,9 +68,6 @@ export default function AboutSection(){
         <hr className='border-b border-slate-500 w-[300px] mt-2 mb-4' />
         <ul className='text-2xl flex flex-col items-start w-[300px]'>
           <li>
-          Co-Founder, Carbo Cat
-          </li>
-          <li>
           Fullstack SWE, Extensis
           </li>
         </ul>
